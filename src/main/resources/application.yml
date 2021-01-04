@@ -1,0 +1,17 @@
+server :
+  port : 9090
+spring:
+  redis:
+    host: 121.196.163.61
+    port: 6379
+    password: cape
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.196.163.61:3306/aliyun
+    username: root
+    password: Benben_900226
+  jpa:
+    hibernate:
+      #ddl-auto: create 如果库中表存在，则删除后再新建，表中有数据存在安全问题
+      ddl-auto: update
+    show-sql: true
